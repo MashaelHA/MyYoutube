@@ -1,0 +1,231 @@
+body {
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* color: white; */
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    background-color: rgb(50, 195, 205);
+    margin-bottom: 20px;
+    padding: 2px 10px;
+    /* height: 3.5vh; */
+    align-items: center;
+}
+
+nav a {
+    padding: 10px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: white;
+    color: black;
+}
+
+.brand {
+    font-weight: bold;
+    border-right: 3px solid white;
+}
+
+.main-menu {
+    flex-grow: 1;
+}
+
+.search-form form {
+    display: flex;
+}
+
+.search-form input ,textarea {
+    height: 25px;
+    /* width: 60%; */
+    border-right-width: 0;
+    border: 1px solid rgba(128, 128, 128, 0.397);
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+}
+
+.search-form button , button {
+    border-left-width: 0;
+    border: 1px solid rgba(128, 128, 128, 0.286);
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+main {
+    display: flex;
+    padding: 0 15px;
+}
+
+main section {
+    margin: 0 15px;
+}
+
+#player {
+    width: 75%;
+}
+
+video {
+    width: 100%;
+}
+
+.video-details {
+    display: flex;
+}
+
+.title {
+    flex-grow: 1;
+}
+.title h1 {
+    margin: 0;
+}
+
+.views {
+    font-size: 12px;
+    color:  rgba(50, 195, 205, 0.544);
+}
+
+.functions button {
+    border: 0;
+    padding: 5px 15px;
+}
+
+.functions button:hover {
+    background-color: rgb(50, 195, 205);
+}
+
+#comments {
+    margin-top: 35px;
+    border-top: 1px solid rgb(241, 241, 241);
+}
+
+#comments form {
+    display: flex;
+    margin-top: 15px;
+}
+
+#comments textarea {
+    flex-grow: 1;
+}
+
+.user-avatar {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: gray;
+    border-radius: 50%;
+}
+
+.username {
+    margin-left: 5px;
+}
+
+#comments .list {
+    margin-top: 35px;
+}
+
+.comment {
+    margin-top: 15px;
+    text-align: justify;
+}
+
+#suggested {
+    width: 25%;
+    /* background-color: rgba(50, 195, 205, 0.174); */
+}
+
+.video {
+    border: 1px solid rgb(50, 195, 205);
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.video h5 {
+    color: black;
+    margin: 5px;
+}
+
+.video a {
+    padding: 5px;
+    display: inline-block;
+}
+.video-thumb {
+    height: 120px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+@media screen and (min-width: 1200px) {
+    .video-thumb {
+        height: 180px;
+    }
+
+}
+
+@media screen and (min-width: 400px) {
+    #suggested {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 5%;
+
+    }
+    #suggested  .video {
+        margin: 5px;
+        width: 200px;
+    }
+}
+
+footer {
+    margin-top: 35px;
+    background-color: rgb(50, 195, 205);
+    height: 4vh;
+    text-align: center;
+    padding-top: 5px;
+    color: white;
+}
+
+@media screen and (max-width: 400px) {
+    main {
+        flex-direction: column;
+    }
+    main section {
+        margin: 0;
+    }
+    #player {
+        width: 100%;
+    }
+    #suggested {
+        width: 100%;
+    }
+    .user-menu {
+        display: none;
+    }
+}
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+    main section {
+        margin: 0;
+    }
+    #player {
+        width: 100%;
+    }
+    #suggested {
+        width: 100%;
+    }
+}

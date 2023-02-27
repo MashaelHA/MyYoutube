@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" type="image/x-icon" href="./asset/icon.png" />
+    <title>MyTube</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="brand">
+          <a href="/">MyTube</a>
+        </div>
+        <div class="main-menu">
+          <a href="#">Home</a>
+          <a href="#">Browse</a>
+          <a href="#">Trends</a>
+        </div>
+        <div class="search-form">
+          <form action="#">
+            <input type="search" placeholder="search for videos" />
+            <button type="submit">
+              <i class="fa fa-search"></i>
+            </button>
+          </form>
+        </div>
+        <div class="user-menu">
+          <a href="#">Upload</a>
+          <i class="fa fa-upload"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="player">
+        <video controls src="asset/grass.mp4"></video>
+        <div class="video-details">
+          <div class="title">
+            <h1>
+              Nice looking grass
+              <span class="views">views (40k)</span>
+            </h1>
+          </div>
+          <div class="functions">
+            <button>
+              <i class="fa fa-thumbs-o-up"></i>
+            </button>
+
+            <button>
+              <i class="fa fa-share"></i>
+            </button>
+          </div>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
+          delectus tempore odit esse dicta? Saepe voluptatibus dolor quae! Eos
+          ipsum accusamus omnis mollitia recusandae rerum labore natus
+          voluptates temporibus id?
+        </p>
+        <div id="comments">
+          <form action="">
+            <textarea placeholder="type your comment"></textarea>
+            <button>send</button>
+          </form>
+
+          <section class="list">
+            <div class="user-avatar">
+              <span class="avatar"></span>
+              <span class="username">@MashaelHA</span>
+            </div>
+            <div class="comment">
+              <q
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+                suscipit quisquam et expedita. Laboriosam odio at quisquam
+                itaque nam doloribus consequuntur perferend is veritatis
+                exercitationem veniam, error sed maxime necessitatibus
+                reiciendis?</q
+              >
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section id="suggested">
+        <div class="video">
+          <div
+            class="video-thumb"
+            style="background-image: url('asset/grass-poster.jpg')"
+          ></div>
+          <a href="">
+            <h5>Playing cats with dogs in the graden 2020</h5>
+          </a>
+        </div>
+
+        <div class="video">
+          <div
+            class="video-thumb"
+            style="background-image: url('asset/grass-poster.jpg')"
+          ></div>
+          <a href="">
+            <h5>How to make websites, go to flexcourses.com</h5>
+          </a>
+        </div>
+
+        <div class="video">
+          <div
+            class="video-thumb"
+            style="background-image: url('asset/grass-poster.jpg')"
+          ></div>
+          <a href="">
+            <h5>How to make websites, go to flexcourses.com</h5>
+          </a>
+        </div>
+
+        <div class="video">
+          <div
+            class="video-thumb"
+            style="background-image: url('asset/grass-poster.jpg')"
+          ></div>
+          <a href="">
+            <h5>How to make websites, go to flexcourses.com</h5>
+          </a>
+        </div>
+
+        <div class="video">
+          <div
+            class="video-thumb"
+            style="background-image: url('asset/grass-poster.jpg')"
+          ></div>
+          <a href="">
+            <h5>How to make websites, go to flexcourses.com</h5>
+          </a>
+        </div>
+
+      </section>
+    </main>
+
+    <footer>Copyrights, MyTube 2023</footer>
+  </body>
+</html>
